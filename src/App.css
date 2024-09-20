@@ -1,0 +1,54 @@
+/* App.css */
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Attractive heading styling */
+.fancy-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, rgba(255,0,150,1) 0%, rgba(0,204,255,1) 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 40px;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Glow effect animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff0099, 0 0 20px #ff0099, 0 0 30px #ff0099;
+  }
+  to {
+    text-shadow: 0 0 20px #00ccff, 0 0 30px #00ccff, 0 0 40px #00ccff;
+  }
+}
+
+/* Buttons */
+.btns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between buttons */
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin: 10px; /* Additional margin if needed */
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #f0f0f0 !important;
+  color: #000 !important;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
